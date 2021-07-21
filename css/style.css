@@ -29,6 +29,7 @@ body {
 }
 
 .logo {
+  margin-bottom: var(--base-space);
   cursor: pointer;
   transition: transform var(--annimation-duration) ease;
 }
@@ -50,6 +51,7 @@ body {
 .buttons {
   display: flex;
   align-items: center;
+  margin-bottom: calc(var(--base-space) * 2);
 }
 .imgBtn {
   width: var(--size-button);
