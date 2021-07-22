@@ -1,6 +1,7 @@
 :root {
   /* color */
   --color-black: #3f454d;
+  --color-gray: #b4b4b4;
   --color-white: #ffffff;
   --color-blue: #3b88c3;
   --color-yellow: #fbbe28;
@@ -14,7 +15,6 @@
   --size-thumbnail: 50px;
   --font-size: 18px;
 
-
   /* annimation */
   --annimation-duration: 300ms;
 }
@@ -25,7 +25,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--color-black);
+  background-color: var(--color-gray);
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
 }
 
 .logo {
@@ -84,8 +85,9 @@ body {
   background-color: white;
   display: flex;
   align-items: center;
-  padding: var(--base-space);
+  padding: calc(var(--base-space) * 1.5) calc(var(--base-space) * 4);
   margin-bottom: var(--base-space);
+  border-radius: var(--size-border);
 }
 .item__thumbnail {
   width: var(--size-thumbnail);
