@@ -25,12 +25,11 @@ function onButtonClick(event, items) {
   const dataset = event.target.dataset;
   const key = dataset.key;
   const value = dataset.value;
+  const filtered = items.filter((item) => item[key] === value);
 
   if (key == null || value == null) {
     return;
   }
-
-  const filtered = items.filter((item) => item[key] === value);
   displayItems(filtered);
 }
 
@@ -45,7 +44,6 @@ function setEventListeners(items) {
 // main
 loadItems()
   .then((items) => {
-    console.log(items);
     displayItems(items);
     setEventListeners(items);
   })
